@@ -1,20 +1,39 @@
-// Delegating Constructor.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+
+using namespace std;
+
+class Enemy
+{
+private:
+	int health;
+	int damage;
+	string name;
+public:
+	Enemy(int h, int d, string n) : health(h), damage(d), name(n) { cout << "custom enemy created\n"; };
+	Enemy() : Enemy(100, 10, "Goblin") { cout << "defualt enemy created\n"; };
+	Enemy(const Enemy& other)
+	{
+		health = other.health;
+		damage = other.damage;
+		name = other.name;
+		cout << "enemy copied\n";
+	}
+	
+	void printStatus() const 
+	{
+		cout << "Enemy Name:"<<name <<endl;
+		cout << "Enemy Health:" << health << endl;
+		cout << "Enemy Damage:" << damage << endl;
+	}
+};
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Enemy e1;
+	Enemy e2(500,50,"Dragon");
+	Enemy e3 = e2;
+	e1.printStatus();
+	e2.printStatus();
+	e3.printStatus();
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
