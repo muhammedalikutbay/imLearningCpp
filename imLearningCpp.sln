@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Copy Constructor", "Copy Co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Delegating Constructor", "Delegating Constructor\Delegating Constructor.vcxproj", "{4FDDE824-68F8-4A4C-B164-92E46E5D34FE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rule of three", "rule of three\rule of three.vcxproj", "{EEB710C9-F7EC-458B-9581-37779B4BFEBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{4FDDE824-68F8-4A4C-B164-92E46E5D34FE}.Release|x64.Build.0 = Release|x64
 		{4FDDE824-68F8-4A4C-B164-92E46E5D34FE}.Release|x86.ActiveCfg = Release|Win32
 		{4FDDE824-68F8-4A4C-B164-92E46E5D34FE}.Release|x86.Build.0 = Release|Win32
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Debug|x64.ActiveCfg = Debug|x64
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Debug|x64.Build.0 = Debug|x64
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Debug|x86.Build.0 = Debug|Win32
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Release|x64.ActiveCfg = Release|x64
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Release|x64.Build.0 = Release|x64
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Release|x86.ActiveCfg = Release|Win32
+		{EEB710C9-F7EC-458B-9581-37779B4BFEBB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

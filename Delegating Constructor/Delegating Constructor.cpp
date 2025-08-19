@@ -9,13 +9,10 @@ private:
 	int damage;
 	string name;
 public:
-	Enemy(int h, int d, string n) : health(h), damage(d), name(n) { cout << "custom enemy created\n"; };
+	Enemy(int h, int d, const string& n) : health(h), damage(d), name(n) { cout << "custom enemy created\n"; };
 	Enemy() : Enemy(100, 10, "Goblin") { cout << "defualt enemy created\n"; };
-	Enemy(const Enemy& other)
+	Enemy(const Enemy& other) : health(other.health), damage(other.damage), name(other.name)
 	{
-		health = other.health;
-		damage = other.damage;
-		name = other.name;
 		cout << "enemy copied\n";
 	}
 	
